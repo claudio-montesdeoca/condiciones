@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Condiciones</title>
+  </head>
+  <body>
+
+     
+    <section>
+      
+      <div>
+        <label for="digit1">Numero 1</label>
+        <select id="digit1">
+          <option value="1">1</option>
+          <option value="1">2</option>
+          <option value="1">3</option>
+          <option value="1">4</option>
+          <option value="1">5</option>
+          <option value="1">6</option>
+          <option value="1">7</option>
+          <option value="1">8</option>
+          <option value="1">9</option>
+        </select>
+      </div>
+
+      <div>
+        <label for="digit2">Numero 2</label>
+        <select id="digit2">
+          <option value="1">1</option>
+          <option value="1">2</option>
+          <option value="1">3</option>
+          <option value="1">4</option>
+          <option value="1">5</option>
+          <option value="1">6</option>
+          <option value="1">7</option>
+          <option value="1">8</option>
+          <option value="1">9</option>
+        </select>
+      </div>
+
+      <div>
+        <label for="digit3">Numero 3</label>
+        <select id="digit3">
+          <option value="1">1</option>
+          <option value="1">2</option>
+          <option value="1">3</option>
+          <option value="1">4</option>
+          <option value="1">5</option>
+          <option value="1">6</option>
+          <option value="1">7</option>
+          <option value="1">8</option>
+          <option value="1">9</option>
+        </select>
+      </div>
+
+      <button
+        onclick = "
+let digit1 = document.querySelector('#digit1').value
+let digit2 = document.querySelector('#digit2').value
+let digit3 = document.querySelector('#digit3').value
+
+ let password = digit1 + digit2 + digit3
+
+ let message = document.querySelector('#mensaje-Password')
+
+ console.log(click)
+
+if(password ==='911'){
+    mensage.innerText = 'password 1 correcto'
+}
+else if(password === '714'){
+    mensage.innerText = 'password 2 correcto'
+}else{
+    message.innerText = 'password Incorrecto'
+}
+"
+      >
+        Ingresar
+      </button>
+
+      <p id="mensaje-Password"></p>
+    </section>
+  </body>
+</html>

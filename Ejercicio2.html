@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Condiciones</title>
+    <link rel="stylesheet" href="/assets/css/style.css" />
+  </head>
+  <body>
+    <h1>No puedes elegir mas de 10 stickers</h1>
+    <div class="carta">
+      <div class="card">
+        <img src="/assets/img/01.jpg" alt="" width="200px" height="300px" />
+        <input id="stikcker1" type="text" />
+      </div>
+
+      <div class="card">
+        <img src="/assets/img/02.jpg" alt="" width="200px" height="300px" />
+        <input id="stikcker2" type="text" />
+      </div>
+
+      <div class="card">
+        <img src="/assets/img/03.png" alt="" width="200px" height="300px" />
+        <input id="stikcker3" type="text" />
+      </div>
+    </div>
+
+    <div class="centrado">
+      <p id="resultado"></p>
+      <button
+        onclick="
+    
+    
+    stikckers1 = Number(document.querySelector('#stikcker1').value);
+    stikckers2 = Number(document.querySelector('#stikcker2').value);
+    stikckers3 = Number(document.querySelector('#stikcker3').value);
+    
+    cantidadSticker = stikcker1 + stikcker2 + stikcker3;
+
+console.log(cantidadSticker)
+
+    totalSticker = document.querySelector( '#resultado' );
+    
+    
+    if (cantidadSticker <= 10){
+
+        totalSticker.innerText = 'Estas Llevando '+ cantidadSticker +' sticker';
+        
+    }else{
+           totalSticker.innerText = 'Estas llevando demasidos sticker';
+    } 
+    
+    
+    "
+      >
+        Calcular
+      </button>
+    </div>
+  </body>
+</html>

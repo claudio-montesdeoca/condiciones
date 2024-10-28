@@ -1,0 +1,31 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.carta{
+    display: flex;
+    justify-content:space-evenly;
+    margin: 30px;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    
+}
+h1{
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+}
+
+.centrado{
+
+    display: flex;
+    justify-content: center;
+    
+    margin: 30px;
+}
